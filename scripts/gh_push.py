@@ -18,7 +18,6 @@ import base64
 import json
 import os
 import subprocess
-import sys
 
 SKIP_DIRS = {".git", "__pycache__", ".pytest_cache", ".ruff_cache", ".venv", "venv", ".idea", ".mypy_cache"}
 SKIP_EXTS = {".pyc"}
