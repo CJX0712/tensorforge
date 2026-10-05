@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tensorforge"
+version = "0.1.0"
+description = "World-class tensor decomposition system (author 晨星)"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["numpy>=1.26"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W", "RUF"]
+ignore = ["RUF001", "RUF002", "RUF003", "RUF059", "E741", "E501"]
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["F401"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

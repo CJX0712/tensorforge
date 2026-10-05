@@ -1,0 +1,23 @@
+# 环境
+venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# 运行产物（由 .gitattributes 管理的文本文件之外的生成物）
+benchmark*.json
+failure_cases*.json
+
+# 数据缓存 / 模型权重 / 密钥
+data_cache/
+*.npz
+*.onnx
+*.pt
+*.ckpt
+.env
+*.pem
+*.key
